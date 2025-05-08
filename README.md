@@ -15,15 +15,19 @@ Please follow these steps to set up and run the project on your computer:
 
 Open a terminal and type: python3 --version
 
-Clone the Repository: git clone https://github.com/Sohith123-mu/carbon-calculator.git
+2.Clone the Repository: git clone https://github.com/Sohith123-mu/carbon-calculator.git
 
-Navigate to the Project Folder: cd software-engineering-project
+3.Navigate to the Project Folder: cd software-engineering-project
 
-Install Dependencies: pip install -r requirements.txt
+4.Install Dependencies: pip install -r requirements.txt
 
-Run the Application: python3 app.py
+5.Run the Application: python3 app.py
 
 You’ll see output like this:
 
 Running on http://127.0.0.1:5000
 Copy the URL and past it any browser, the carbon emission calculator will load.
+
+Front end : Sai Charan, Madhu Sudhan Reddy
+Back end : Dhanush,Sohith and Durga Rushi
+Database management : Sahith Potu
