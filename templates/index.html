@@ -1,0 +1,108 @@
+<!-- templates/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Carbon Emission Prediction</title>
+    <style>
+        body {
+            background-image: url("/static/bg.jpg");
+            background-size: cover;
+            font-family: Arial, sans-serif;
+            color: #ffffff;
+        }
+        .container {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 30px;
+            border-radius: 15px;
+            max-width: 800px;
+            margin: 50px auto;
+        }
+        h1 {
+            text-align: center;
+            color: #00ffcc;
+        }
+        form {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        label, input, select {
+            width: 48%;
+            margin-bottom: 15px;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #00ffcc;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .result {
+            margin-top: 20px;
+            font-size: 18px;
+            color: #00ffcc;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>Carbon Emission Prediction System</h1>
+    <form action="/predict" method="post">
+        <!-- Add all required input fields based on your dataset -->
+        <label>Monthly Grocery Bill</label>
+        <input type="number" name="Monthly Grocery Bill" required>
+
+        <label>Vehicle Monthly Distance Km</label>
+        <input type="number" name="Vehicle Monthly Distance Km" required>
+
+        <label>Waste Bag Weekly Count</label>
+        <input type="number" name="Waste Bag Weekly Count" required>
+
+        <label>How Long TV PC Daily Hour</label>
+        <input type="number" name="How Long TV PC Daily Hour" required>
+
+        <label>How Many New Clothes Monthly</label>
+        <input type="number" name="How Many New Clothes Monthly" required>
+
+        <label>How Long Internet Daily Hour</label>
+        <input type="number" name="How Long Internet Daily Hour" required>
+
+        <label>Body Type</label>
+        <select name="Body Type">
+            <option value="underweight">Underweight</option>
+            <option value="normal">Normal</option>
+            <option value="overweight">Overweight</option>
+            <option value="obese">Obese</option>
+        </select>
+
+        <label>Diet</label>
+        <select name="Diet">
+            <option value="vegan">Vegan</option>
+            <option value="vegetarian">Vegetarian</option>
+            <option value="pescatarian">Pescatarian</option>
+            <option value="omnivore">Omnivore</option>
+        </select>
+
+        <label>Recycling (comma separated)</label>
+        <input type="text" name="Recycling" placeholder="Plastic,Glass">
+
+        <label>Cooking With (comma separated)</label>
+        <input type="text" name="Cooking_With" placeholder="Microwave,Frying">
+
+        <div style="width: 100%; text-align: center;">
+            <button type="submit">Predict</button>
+            <button type="reset">Reset</button>
+        </div>
+    </form>
+
+    {% if result %}
+    <div class="result">
+        <p><strong>Decision Tree Prediction:</strong> {{ result.dt }}</p>
+        <p><strong>Random Forest Prediction:</strong> {{ result.rf }}</p>
+        <p><strong>CNN Prediction:</strong> {{ result.cnn }}</p>
+    </div>
+    {% endif %}
+</div>
+</body>
+</html>
