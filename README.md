@@ -17,7 +17,7 @@ Open a terminal and type: python3 --version
 
 2.Clone the Repository: git clone https://github.com/Sohith123-mu/carbon-calculator.git
 
-3.Navigate to the Project Folder: cd software-engineering-project
+3.Navigate to the Project Folder: cd carbon-calculator
 
 4.Install Dependencies: pip install -r requirements.txt
 
