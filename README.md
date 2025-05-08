@@ -34,5 +34,5 @@ Copy the URL and past it any browser, the carbon emission calculator will load.
 | Dhanush          | se22ucse216 | Backend Developer        |
 | Rushi            | se22ucse088 | Backend Developer        |
 | Sai Charan       | se22ucse159 | Frontend Developer       |
-| Madhu Sudhan     | se22ucse020 | Frontend Developer       |
+|       |
 | Sahith           | se22ucse213 | Database Management      |
