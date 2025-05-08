@@ -28,6 +28,11 @@ You’ll see output like this:
 Running on http://127.0.0.1:5000
 Copy the URL and past it any browser, the carbon emission calculator will load.
 
-Front end : Sai Charan, Madhu Sudhan Reddy
-Back end : Dhanush,Sohith and Durga Rushi
-Database management : Sahith Potu
+| Name             | Roll No.    | Role                     |
+| ---------------- | ----------- | ------------------------ |
+| Sohith           | se22ucse325 | Backend Developer        |
+| Dhanush          | se22ucse216 | Backend Developer        |
+| Rushi            | se22ucse088 | Backend Developer        |
+| Sai Charan       | se22ucse159 | Frontend Developer       |
+| Madhu Sudhan     | se22ucse020 | Frontend Developer       |
+| Sahith           | se22ucse213 | Database Management      |
